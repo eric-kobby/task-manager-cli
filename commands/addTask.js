@@ -34,8 +34,7 @@ export default async function addTask() {
     // Displaying a spinner with the following text message using ora 
     let spinner = ora('Creating the tasks...').start()
 
-    // looping over every todo in the userResponse array
-    // and saving each todo in the database
+    // saving each task in the database
     for (let i = 0; i < userResponse.length; i++) {
       const response = userResponse[i]
       await Tasks.create(response)
