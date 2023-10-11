@@ -1,3 +1,5 @@
 
-node_modules
-.gitignore
+#dependencies
+/node_modules
+
+/.gitignore
